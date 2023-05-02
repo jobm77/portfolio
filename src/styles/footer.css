@@ -1,0 +1,120 @@
+textarea[name="message"] {
+  resize: none;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #ffd700;
+  padding: 4rem;
+}
+
+#footer,
+#footer a {
+  color: #000000;
+}
+
+#footer a {
+  font-weight: 400;
+}
+
+#footer a:active,
+#footer a:hover,
+#footer a:enabled {
+  transition: 0.6s;
+  font-weight: 900;
+  transform: scale(2);
+}
+
+.upper-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+  align-self: stretch;
+}
+
+.contact-form,
+.contact-form .form {
+  display: flex;
+}
+
+.contact-form .form {
+  flex-direction: column;
+}
+
+.contact-form .contact-section {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.contact-form .contact-section .legend {
+  font-size: 2em;
+}
+
+.contact-form .contact-section .legend:hover {
+  transform: scale(1.4);
+  transition: 0.8s;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.contact-form .contact-section input {
+  margin-bottom: 10px;
+}
+
+.contact-form .contact-section input,
+.contact-form .contact-section textarea {
+  border: none;
+  background-color: #ffffff;
+}
+
+.contact-form .contact-section input:focus,
+.contact-form .contact-section textarea:focus {
+  outline: thick double #000000;
+}
+
+.contact-form .form .send {
+  width: 50%;
+  margin-left: 25%;
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+
+.socials i {
+  margin: 10px;
+}
+
+#footer .watermark {
+  font-size: 0.97em;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #000000;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top a {
+  background-color: #ffd700;
+}

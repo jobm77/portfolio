@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000000;
+}
+  
+.logo-wrapper,
+.menu {
+  display: flex;
+  align-items: center;
+}
+  
+.logo {
+  height: 6rem;
+  width: auto;
+  float: left;
+}
+  
+.header .menu li {
+  list-style-type: none;
+  display: inline;
+}
+  
+.header .menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.99em;
+}
+  
+.header .menu li a:hover {
+  transition: 1.3s;
+  text-decoration: underline;
+}
+  
+.menu-item {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+  
