@@ -54,21 +54,6 @@ html {
   transform: scale(1);
 }
 
-.header .menu li a::after {
-  content: "";
-  display: block;
-  left: 1%;
-  width: 99%;
-  position: absolute;
-  height: 0.2em;
-  background-color: #ffffff;
-  transform: scale(0);
-  transition: transform 0.4s ease-in-out;
-}
-.header .menu li a:hover::after {
-  transform: scale(1);
-}
-
 .menu-item {
   font-size: 1.4rem;
   font-weight: 700;
