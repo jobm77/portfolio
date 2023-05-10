@@ -1,0 +1,12 @@
+.first-year {
+  text-align: center;
+}
+
+.second-year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000000;
+  color: #ffd700;
+}

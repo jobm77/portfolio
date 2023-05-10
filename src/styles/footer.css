@@ -1,13 +1,9 @@
-textarea[name="message"] {
-  resize: none;
-}
-
 #footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: #ffd700;
+  background-color: #ffd700;
   padding: 4rem;
 }
 
@@ -28,21 +24,10 @@ textarea[name="message"] {
   transform: scale(2);
 }
 
-.upper-footer {
+.contact-form {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex: 1;
-  align-self: stretch;
-}
-
-.contact-form,
-.contact-form .form {
-  display: flex;
-}
-
-.contact-form .form {
   flex-direction: column;
+  align-items: center;
 }
 
 .contact-form .contact-section {
@@ -51,15 +36,31 @@ textarea[name="message"] {
   border: none;
 }
 
-.contact-form .contact-section .legend {
-  font-size: 2em;
+.contact-form .legend {
+  font-size: 1.6em;
+  position: relative;
 }
 
-.contact-form .contact-section .legend:hover {
-  transform: scale(1.4);
-  transition: 0.8s;
+.contact-form .legend::after {
+  content: "";
+  display: block;
+  width: 55.5%;
+  position: absolute;
+  left: 22%;
+  height: 0.2em;
+  background-color: #000000;
+  transform: scale(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.contact-form .legend:hover {
+  transform: scale(1.2);
+  transition: 1.2s;
   font-weight: bolder;
-  text-decoration: underline;
+}
+
+.contact-form .legend:hover::after {
+  transform: scale(1);
 }
 
 .contact-form .contact-section input {
@@ -74,12 +75,17 @@ textarea[name="message"] {
 
 .contact-form .contact-section input:focus,
 .contact-form .contact-section textarea:focus {
-  outline: thick double #000000;
+  outline: 0.4px solid #000000;
 }
 
-.contact-form .form .send {
+textarea[name="message"] {
+  resize: none;
+}
+
+.contact-form .send {
   width: 50%;
   margin-left: 25%;
+  margin-top: 15px;
   background-color: #000000;
   border: none;
   color: #ffffff;
@@ -107,8 +113,7 @@ textarea[name="message"] {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #000000;
-  color: #fff;
+  background-color: #000000;
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -116,5 +121,5 @@ textarea[name="message"] {
 }
 
 .back-to-top a {
-  background-color: #ffd700;
+  color: #ffd700;
 }

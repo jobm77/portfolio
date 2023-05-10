@@ -1,0 +1,49 @@
+.bts-presentation {
+  background-color: #ffffff;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.school-presentation,
+.work-presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.presentation-title {
+  text-align: center;
+  position: relative;
+}
+
+.one::after {
+  width: 65%;
+  left: 20%;
+}
+.one::after,
+.second::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.2em;
+  background-color: #000000;
+  transform: scale(0);
+  transition: transform 0.4s ease-in-out;
+}
+.second::after {
+  width: 71.5%;
+  left: 17%;
+}
+
+.presentation-title:hover::after {
+  transform: scale(1);
+}
+
+.bts-presentation p {
+  text-align: justify;
+  margin: auto;
+  width: 80%;
+}
